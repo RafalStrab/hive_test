@@ -1,0 +1,5 @@
+app_convertize:
+    resource: "@APPConvertizeBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

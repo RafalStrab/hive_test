@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bee Test</title>
+</head>
+<body>
+	<a href="{{ path('hit') }}">Hit</a>
+	<div>Bees</div>
+	{% for bee in app.session.get('bees') %}		
+		{% for b in bee %}
+			<div>
+				<div>{{ b.name }}</div>
+				<div>{{ b.type }}</div>
+				<div>{{ b.hp }}</div>
+			</div>
+		{% endfor %}
+	{% endfor %}
+</body>
+</html>
